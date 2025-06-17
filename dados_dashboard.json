@@ -1,0 +1,69 @@
+{
+    "campus": {
+        "nome": "Macaé",
+        "coordenador": "Susan de Cássia Alexandre"
+    },
+    "cursos": [
+        {
+            "nome": "Auxiliar diversos",
+            "tipo": "auxiliar",
+            "vagas": 8,
+            "duracao": "4 meses",
+            "inicio": "2024-10-14",
+            "termino": "2025-02-12",
+            "coordenador": "Lucas Augusto Scotta Merlo"
+        },
+        {
+            "nome": "Técnico em Eletrotécnica",
+            "tipo": "tecnico",
+            "vagas": 45,
+            "duracao": "24 meses",
+            "inicio": "2025-05-12",
+            "termino": "2027-04-30",
+            "coordenador": "Francisco Tiago Carvalho Silva"
+        },
+        {
+            "nome": "Técnico em Planejamento e Controle da Produção",
+            "tipo": "tecnico",
+            "vagas": 39,
+            "duracao": "18 meses",
+            "inicio": "2025-05-12",
+            "termino": "2026-10-31",
+            "coordenador": "Daniel Almeida da Costa Pessanha"
+        },
+        {
+            "nome": "Técnico em Soldagem",
+            "tipo": "tecnico",
+            "vagas": 42,
+            "duracao": "24 meses",
+            "inicio": "2025-05-12",
+            "termino": "2027-04-30",
+            "coordenador": "Sérgio Pessanha Rasma"
+        }
+    ],
+    "alunos": [
+        {"id": 1, "nome": "Bernardo Teles Miranda", "curso": "Técnico em Soldagem", "bolsa": "R$ 660,00", "ingresso": "2025-05-12"},
+        {"id": 2, "nome": "Carla Bezerra Vasques", "curso": "Técnico em Eletrotécnica", "bolsa": "R$ 856,00", "ingresso": "2025-05-12"},
+        {"id": 3, "nome": "Daniel Souza Serpa", "curso": "Técnico em Planejamento e Controle da Produção", "bolsa": "R$ 660,00", "ingresso": "2025-05-12"},
+        {"id": 4, "nome": "Elaine Cristina Nóbrega", "curso": "Auxiliar diversos", "bolsa": "R$ 660,00", "ingresso": "2024-10-14"},
+        {"id": 5, "nome": "Fábio Leite Aragão", "curso": "Técnico em Soldagem", "bolsa": "R$ 856,00", "ingresso": "2025-05-12"},
+        {"id": 6, "nome": "Gabriela Martins Costa", "curso": "Técnico em Eletrotécnica", "bolsa": "R$ 660,00", "ingresso": "2025-05-12"},
+        {"id": 7, "nome": "Henrique Oliveira Santos", "curso": "Técnico em Planejamento e Controle da Produção", "bolsa": "R$ 856,00", "ingresso": "2025-05-12"},
+        {"id": 8, "nome": "Isabela Ferreira Lima", "curso": "Auxiliar diversos", "bolsa": "R$ 660,00", "ingresso": "2024-10-14"},
+        {"id": 9, "nome": "João Pedro Almeida", "curso": "Técnico em Soldagem", "bolsa": "R$ 660,00", "ingresso": "2025-05-12"},
+        {"id": 10, "nome": "Karina Silva Rocha", "curso": "Técnico em Eletrotécnica", "bolsa": "R$ 856,00", "ingresso": "2025-05-12"}
+    ],
+    "financeiro": {
+        "Investimento total": 2300000,
+        "Orçamento materiais": 134000,
+        "Bolsas": 1850000,
+        "Infraestrutura": 316000
+    },
+    "equipes": [
+        {"nome": "Susan de Cássia Alexandre", "cargo": "Coordenador Geral", "email": "susan.alexandre@iff.edu.br"},
+        {"nome": "Lucas Augusto Scotta Merlo", "cargo": "Coordenador de Curso - Auxiliar diversos", "email": "lucas.merlo@iff.edu.br"},
+        {"nome": "Sérgio Pessanha Rasma", "cargo": "Coordenador de Curso - Técnico em Soldagem", "email": "sergio.rasma@iff.edu.br"},
+        {"nome": "Francisco Tiago Carvalho Silva", "cargo": "Coordenador de Curso - Técnico em Eletrotécnica", "email": "francisco.silva@iff.edu.br"},
+        {"nome": "Daniel Almeida da Costa Pessanha", "cargo": "Coordenador de Curso - Técnico em Planejamento e Controle da Produção", "email": "daniel.pessanha@iff.edu.br"}
+    ]
+}

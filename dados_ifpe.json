@@ -1,0 +1,43 @@
+{
+    "campus": {
+        "nome": "Pernambuco (Múltiplos Campi)",
+        "coordenador": "James Radson da Silva Lima"
+    },
+    "cursos": [
+        {"nome": "INSPETOR DE ELÉTRICA - Campus Ipojuca", "tipo": "FIC", "vagas": 30, "duracao": "9 meses", "inicio": "2024-11-25", "termino": "2025-08-29", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "Pintor Industrial - Campus Ipojuca", "tipo": "FIC", "vagas": 30, "duracao": "9 meses", "inicio": "2024-11-25", "termino": "2025-08-29", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "CALDEIREIRO MANHÃ - Campus Ipojuca", "tipo": "FIC", "vagas": 30, "duracao": "9 meses", "inicio": "2024-11-25", "termino": "2025-08-29", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "CALDEIREIRO TARDE - Campus Ipojuca", "tipo": "FIC", "vagas": 30, "duracao": "9 meses", "inicio": "2024-11-25", "termino": "2025-08-29", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "AUXILIAR DE SERVIÇOS DIVERSOS - Campus Abreu e Lima (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "4 meses", "inicio": "2024-10-21", "termino": "2025-02-21", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "AJUDANTE DE ELÉTRICA - Campus Igarassu (Finalizado)", "tipo": "FIC", "vagas": 29, "duracao": "4 meses", "inicio": "2024-10-21", "termino": "2025-02-21", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "ALMOXARIFE - Campus Igarassu (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "4 meses", "inicio": "2024-10-21", "termino": "2025-02-21", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "AUXILIAR DE SERVIÇOS DIVERSOS - Campus Cabo (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "4 meses", "inicio": "2024-10-21", "termino": "2025-02-21", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "MONTADOR DE ANDAIMES - Campus Ipojuca (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "5 meses", "inicio": "2024-11-25", "termino": "2025-04-25", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "AJUDANTE DE INSTRUMENTAÇÃO - Campus Ipojuca (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "4 meses", "inicio": "2024-11-25", "termino": "2025-03-24", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "AJUDANTE DE INSTRUMENTAÇÃO NOITE - Campus Caruaru (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "4 meses", "inicio": "2024-11-25", "termino": "2025-03-27", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "AJUDANTE DE TUBULAÇÕES - MANHÃ - Campus Caruaru (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "4 meses", "inicio": "2024-11-25", "termino": "2025-03-27", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "AJUDANTE DE TUBULACÕES - NOITE - Campus Caruaru (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "4 meses", "inicio": "2024-11-25", "termino": "2025-03-26", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "INSTRUMENTISTA - MANHÃ - Campus Caruaru (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "5 meses", "inicio": "2024-11-25", "termino": "2025-04-25", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "INSTRUMENTISTA - NOITE - Campus Caruaru (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "5 meses", "inicio": "2024-11-25", "termino": "2025-04-25", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "MECÂNICO MONTADOR DE MÁQUINAS - Campus Caruaru (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "5 meses", "inicio": "2024-11-25", "termino": "2025-04-23", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "MONTADOR DE ANDAIMES - MANHÃ - Campus Caruaru (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "5 meses", "inicio": "2024-11-25", "termino": "2025-04-25", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "MONTADOR DE ANDAIMES - TARDE - Campus Caruaru (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "5 meses", "inicio": "2024-11-25", "termino": "2025-04-24", "coordenador": "Coordenador(a) Genérico(a)"},
+        {"nome": "SOLDADOR - Campus Caruaru (Finalizado)", "tipo": "FIC", "vagas": 30, "duracao": "5 meses", "inicio": "2024-11-25", "termino": "2025-04-24", "coordenador": "Coordenador(a) Genérico(a)"}
+    ],
+    "alunos": [
+        {"id": 227, "nome": "ALEXANDRO JOSÉ DA SILVA", "curso": "INSPETOR DE ELÉTRICA - Campus Ipojuca", "bolsa": "R$ 660,00", "ingresso": "2024-11-25"},
+        {"id": 228, "nome": "AMANDA LARISSA PEREIRA DA SILVA", "curso": "INSPETOR DE ELÉTRICA - Campus Ipojuca", "bolsa": "R$ 856,00", "ingresso": "2024-11-25"},
+        {"id": 560, "nome": "WELLINGTON JOSÉ OLIVEIRA", "curso": "SOLDADOR - Campus Caruaru (Finalizado)", "bolsa": "R$ 660,00", "ingresso": "2024-11-25"},
+        {"id": 561, "nome": "WILLYANE KARLA BARBOSA DE ANDRADE", "curso": "SOLDADOR - Campus Caruaru (Finalizado)", "bolsa": "R$ 856,00", "ingresso": "2024-11-25"}
+    ],
+    "financeiro": {
+        "Investimento total": 2100000,
+        "Bolsas": 1260000,
+        "Infraestrutura e Equipamentos": 630000,
+        "Material de Consumo": 210000
+    },
+    "equipes": [
+        {"nome": "James Radson da Silva Lima", "cargo": "Coordenador Geral", "email": "james.lima@ifpe.edu.br"},
+        {"nome": "Coordenador(a) Genérico(a)", "cargo": "Coordenador(a) de Curso", "email": "coord.generico@ifpe.edu.br"}
+    ]
+}

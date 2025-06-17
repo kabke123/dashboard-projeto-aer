@@ -1,0 +1,44 @@
+{
+    "campus": {
+        "nome": "Duque de Caxias",
+        "coordenador": "Luana Ribeiro de Lima da Silva"
+    },
+    "cursos": [
+        {
+            "nome": "Técnico em Segurança do Trabalho",
+            "tipo": "tecnico",
+            "vagas": 30,
+            "duracao": "24 meses",
+            "inicio": "2024-09-15",
+            "termino": "2026-09-15",
+            "coordenador": "Paulinho"
+        }
+    ],
+    "alunos": [
+        {"id": 1, "nome": "Aluno 1", "curso": "Técnico em Segurança do Trabalho", "bolsa": "R$ 660,00", "ingresso": "2024-09-15"},
+        {"id": 2, "nome": "Aluno 2", "curso": "Técnico em Segurança do Trabalho", "bolsa": "R$ 660,00", "ingresso": "2024-09-15"},
+        {"id": 3, "nome": "Aluno 3", "curso": "Técnico em Segurança do Trabalho", "bolsa": "R$ 660,00", "ingresso": "2024-09-15"},
+        {"id": 4, "nome": "Aluno 4", "curso": "Técnico em Segurança do Trabalho", "bolsa": "R$ 660,00", "ingresso": "2024-09-15"},
+        {"id": 5, "nome": "Aluno 5", "curso": "Técnico em Segurança do Trabalho", "bolsa": "R$ 660,00", "ingresso": "2024-09-15"},
+        {"id": 6, "nome": "Aluno 6", "curso": "Técnico em Segurança do Trabalho", "bolsa": "R$ 856,00", "ingresso": "2024-09-15"},
+        {"id": 7, "nome": "Aluno 7", "curso": "Técnico em Segurança do Trabalho", "bolsa": "R$ 856,00", "ingresso": "2024-09-15"},
+        {"id": 8, "nome": "Aluno 8", "curso": "Técnico em Segurança do Trabalho", "bolsa": "R$ 856,00", "ingresso": "2024-09-15"},
+        {"id": 9, "nome": "Aluno 9", "curso": "Técnico em Segurança do Trabalho", "bolsa": "R$ 856,00", "ingresso": "2024-09-15"},
+        {"id": 10, "nome": "Aluno 10", "curso": "Técnico em Segurança do Trabalho", "bolsa": "R$ 856,00", "ingresso": "2024-09-15"}
+    ],
+    "financeiro": {
+        "Investimento total": 1555743,
+        "Investimento permanente": 428676,
+        "Material de consumo": 26799,
+        "Visita técnica": 36000,
+        "Kits pedagógicos": 12300,
+        "Bolsa permanência": 517968,
+        "Equipe gestora": 343200,
+        "Coordenação de cursos": 46800,
+        "Docentes": 144000
+    },
+    "equipes": [
+        {"nome": "Luana Ribeiro de Lima da Silva", "cargo": "Coordenador Geral", "email": "luana.silva@ifrj.edu.br"},
+        {"nome": "Paulinho", "cargo": "Coordenador de Curso - Técnico em Segurança do Trabalho", "email": "paulinho@ifrj.edu.br"}
+    ]
+}

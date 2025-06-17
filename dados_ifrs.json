@@ -1,0 +1,50 @@
+{
+    "campus": {
+        "nome": "Rio Grande do Sul (Múltiplos Campi)",
+        "coordenador": "Leila Schwarz"
+    },
+    "cursos": [
+        {
+            "nome": "Pintor Industrial - Campus Alvorada",
+            "tipo": "FIC",
+            "vagas": 35,
+            "duracao": "4 meses",
+            "inicio": "2024-10-07",
+            "termino": "2025-02-06",
+            "coordenador": "Coordenador(a) Pintor Industrial"
+        },
+        {
+            "nome": "Auxiliar de Serviços Diversos - Campus Porto Alegre",
+            "tipo": "FIC",
+            "vagas": 26,
+            "duracao": "4 meses",
+            "inicio": "2024-10-07",
+            "termino": "2025-02-06",
+            "coordenador": "Coordenador(a) Auxiliar de Serviços"
+        }
+    ],
+    "alunos": [
+        {"id": 166, "nome": "ADRIANA DOS SANTOS", "curso": "Pintor Industrial - Campus Alvorada", "bolsa": "R$ 660,00", "ingresso": "2024-10-07"},
+        {"id": 167, "nome": "ADRIANO MACIEL MACIEL", "curso": "Pintor Industrial - Campus Alvorada", "bolsa": "R$ 660,00", "ingresso": "2024-10-07"},
+        {"id": 168, "nome": "ALEXSANDRO DA SILVA", "curso": "Pintor Industrial - Campus Alvorada", "bolsa": "R$ 660,00", "ingresso": "2024-10-07"},
+        {"id": 169, "nome": "ALINE PEREIRA DOS SANTOS", "curso": "Pintor Industrial - Campus Alvorada", "bolsa": "R$ 660,00", "ingresso": "2024-10-07"},
+        {"id": 170, "nome": "ANA PAULA DA SILVA DIAS", "curso": "Pintor Industrial - Campus Alvorada", "bolsa": "R$ 660,00", "ingresso": "2024-10-07"},
+        {"id": 171, "nome": "ANDERSON LUIS DA SILVA", "curso": "Pintor Industrial - Campus Alvorada", "bolsa": "R$ 856,00", "ingresso": "2024-10-07"},
+        {"id": 172, "nome": "ANDRE LUIS DA SILVA SANTOS", "curso": "Pintor Industrial - Campus Alvorada", "bolsa": "R$ 856,00", "ingresso": "2024-10-07"},
+        {"id": 201, "nome": "ADRIANA RAQUEL", "curso": "Auxiliar de Serviços Diversos - Campus Porto Alegre", "bolsa": "R$ 660,00", "ingresso": "2024-10-07"},
+        {"id": 202, "nome": "ALEXIA Vitória", "curso": "Auxiliar de Serviços Diversos - Campus Porto Alegre", "bolsa": "R$ 660,00", "ingresso": "2024-10-07"},
+        {"id": 203, "nome": "ALINE DOS SANTOS", "curso": "Auxiliar de Serviços Diversos - Campus Porto Alegre", "bolsa": "R$ 856,00", "ingresso": "2024-10-07"},
+        {"id": 204, "nome": "AMANDA NUNES", "curso": "Auxiliar de Serviços Diversos - Campus Porto Alegre", "bolsa": "R$ 856,00", "ingresso": "2024-10-07"}
+    ],
+    "financeiro": {
+        "Investimento total": 2418364,
+        "Bolsas": 185592,
+        "Infraestrutura e Equipamentos": 1562940,
+        "Material de Consumo": 669832
+    },
+    "equipes": [
+        {"nome": "Leila Schwarz", "cargo": "Coordenador Geral", "email": "leila.schwarz@ifrs.edu.br"},
+        {"nome": "Coordenador(a) Pintor Industrial", "cargo": "Coordenador de Curso - Pintor Industrial", "email": "coord.pintor.alvorada@ifrs.edu.br"},
+        {"nome": "Coordenador(a) Auxiliar de Serviços", "cargo": "Coordenador de Curso - Auxiliar de Serviços Diversos", "email": "coord.auxiliar.poa@ifrs.edu.br"}
+    ]
+}

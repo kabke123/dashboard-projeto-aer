@@ -1,0 +1,121 @@
+{
+    "projeto": {
+        "titulo": "Autonomia e Renda - Petrobras",
+        "fundacao": "Fundação Ennio de Jesus Pinheiro Amaral Faifsul",
+        "coordenacaoGeral": [
+            "Nádia Madruga",
+            "Isabel Gravato"
+        ]
+    },
+    "resumoGeral": {
+        "totalInstitutos": 9,
+        "totalCursos": 5,
+        "totalAlunos": 164,
+        "orcamentoTotal": 15000000
+    },
+    "rubricas": {
+        "orcamento": {
+            "Bolsas": 10000000,
+            "Material de Consumo": 3000000,
+            "Equipamentos": 2000000,
+            "Serviços": 1000000
+        },
+        "executado": {
+            "Bolsas": 6500000,
+            "Material de Consumo": 1350000,
+            "Equipamentos": 1600000,
+            "Serviços": 300000
+        }
+    },
+    "institutos": [
+        {
+            "id": "IFF",
+            "nomeCompleto": "Instituto Federal Fluminense",
+            "localizacao": "Rio de Janeiro",
+            "status": "ativo",
+            "resumo": {
+                "alunos": 134,
+                "cursos": 4,
+                "orcamento": 2300000
+            },
+            "paginaDetalhes": "detalhes.html",
+            "arquivoDeDados": "dados_dashboard.json"
+        },
+        {
+            "id": "IFRJ",
+            "nomeCompleto": "Instituto Federal do Rio de Janeiro",
+            "localizacao": "Rio de Janeiro",
+            "status": "ativo",
+            "resumo": {
+                "alunos": 30,
+                "cursos": 1,
+                "orcamento": 1555743
+            },
+            "paginaDetalhes": "detalhes.html",
+            "arquivoDeDados": "dados_ifrj.json"
+        },
+        {
+            "id": "IFSP",
+            "nomeCompleto": "Instituto Federal de São Paulo",
+            "localizacao": "São Paulo",
+            "status": "ativo",
+            "resumo": { "alunos": 165, "cursos": 5, "orcamento": 2555743 },
+            "paginaDetalhes": "detalhes.html",
+            "arquivoDeDados": "dados_ifsp.json"
+        },
+        {
+            "id": "IFPE",
+            "nomeCompleto": "Instituto Federal de Pernambuco",
+            "localizacao": "Pernambuco",
+            "status": "ativo",
+            "resumo": { "alunos": 569, "cursos": 19, "orcamento": 2100000 },
+            "paginaDetalhes": "detalhes.html",
+            "arquivoDeDados": "dados_ifpe.json"
+        },
+        {
+            "id": "IFMG",
+            "nomeCompleto": "Instituto Federal de Minas Gerais",
+            "localizacao": "Minas Gerais",
+            "status": "inativo",
+            "resumo": { "alunos": 128, "cursos": 4, "orcamento": 1900000 },
+            "paginaDetalhes": null,
+            "arquivoDeDados": null
+        },
+        {
+            "id": "IFRS",
+            "nomeCompleto": "Instituto Federal do Rio Grande do Sul",
+            "localizacao": "Rio Grande do Sul",
+            "status": "ativo",
+            "resumo": { "alunos": 61, "cursos": 2, "orcamento": 2418364 },
+            "paginaDetalhes": "detalhes.html",
+            "arquivoDeDados": "dados_ifrs.json"
+        },
+        {
+            "id": "IFSUL",
+            "nomeCompleto": "Instituto Federal Sul-rio-grandense",
+            "localizacao": "Rio Grande do Sul",
+            "status": "inativo",
+            "resumo": { "alunos": 138, "cursos": 5, "orcamento": 2000000 },
+            "paginaDetalhes": null,
+            "arquivoDeDados": null
+        },
+        {
+            "id": "IFPR",
+            "nomeCompleto": "Instituto Federal do Paraná",
+            "localizacao": "Paraná",
+            "status": "inativo",
+            "resumo": { "alunos": 132, "cursos": 4, "orcamento": 1800000 },
+            "paginaDetalhes": null,
+            "arquivoDeDados": null
+        },
+        {
+            "id": "IFES",
+            "nomeCompleto": "Instituto Federal do Espírito Santo",
+            "localizacao": "Espírito Santo",
+            "status": "inativo",
+            "resumo": { "alunos": 125, "cursos": 4, "orcamento": 1700000 },
+            "paginaDetalhes": null,
+            "arquivoDeDados": null
+        }
+    ]
+}

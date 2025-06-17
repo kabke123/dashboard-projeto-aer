@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Principal - Projeto AeR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { 
+            --primary-color: #198754; 
+            --secondary-color: #dc3545; 
+            --tertiary-color: #ffc107; 
+            --text-color: #343a40;
+            --light-bg: #f8f9fa;
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: var(--light-bg); 
+            color: var(--text-color);
+        }
+        .dashboard-header { 
+            background-color: var(--primary-color); 
+            color: white; 
+            padding: 20px 0; 
+            margin-bottom: 20px; 
+        }
+        .card { 
+            border-radius: 10px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 20px; 
+            transition: transform 0.3s; 
+        }
+        .card:hover { 
+            transform: translateY(-5px); 
+        }
+        .card-header { 
+            border-radius: 10px 10px 0 0 !important; 
+            font-weight: bold; 
+        }
+        .stats-card { 
+            text-align: center; 
+            padding: 15px; 
+        }
+        .stats-card .value { 
+            font-size: 2rem; 
+            font-weight: bold; 
+        }
+        .stats-card .label { 
+            font-size: 0.9rem; 
+            color: #6c757d; 
+        }
+        .chart-container { 
+            position: relative; 
+            height: 300px; 
+            max-height: 300px; 
+        }
+        .if-card { 
+            border-left: 5px solid; 
+            cursor: pointer; 
+        }
+        .if-card.active { 
+            border-left-color: var(--primary-color); 
+        }
+        .if-card.inactive { 
+            border-left-color: #6c757d; 
+            opacity: 0.8; 
+        }
+        .coming-soon { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0,0,0,0.7); 
+            color: white; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-size: 1.5rem; 
+            border-radius: 10px; 
+        }
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid var(--primary-color);
+            border-top: 5px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+        .header-logo {
+            max-height: 80px; /* Ajuste a altura máxima do logo conforme necessário */
+            margin: 0 20px;   /* Adiciona um espaçamento lateral */
+        }
+        .header-title-block {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="header-content">
+                <img src="images/logo-faifsul.png" alt="Logo FAIFSUL" class="header-logo">
+                <div class="header-title-block">
+                    <h1>Autonomia e Renda - Petrobras</h1>
+                    <p class="lead mb-0">Fundação Ennio de Jesus Pinheiro Amaral Faifsul</p>
+                    <p class="mb-0 mt-2"><strong>Coordenação Geral:</strong> <span id="general-coordination"></span></p>
+                </div>
+                <img src="images/logo-petrobras.png" alt="Logo Petrobras" class="header-logo">
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="value text-primary" id="total-institutos"></div>
+                    <div class="label">Institutos Federais</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="value text-danger" id="total-cursos"></div>
+                    <div class="label">Cursos</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="value text-warning" id="total-alunos"></div>
+                    <div class="label">Alunos</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card stats-card">
+                    <div class="value text-primary" id="orcamento-total"></div>
+                    <div class="label">Orçamento Total</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        Institutos Federais Participantes
+                    </div>
+                    <div class="card-body">
+                        <div class="row" id="institutes-list-container">
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header bg-warning text-dark">
+                        Rubricas do Projeto
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container mb-4">
+                            <canvas id="rubricasChart"></canvas>
+                        </div>
+                        
+                        <h5>Execução das Rubricas</h5>
+                        <div id="rubricas-progress">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Fundação Ennio de Jesus Pinheiro Amaral Faifsul</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Projeto Autonomia e Renda - Petrobras</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="hub_script.js"></script>
+</body>
+</html>
