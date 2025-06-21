@@ -17,15 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Processar dados
             populateSummary(totals, data.resumoGeral.totalInstitutos);
-
-            // Preencher Coordenação Geral
-            if (data.projeto && data.projeto.coordenacaoGeral) {
-                const coordinationElement = document.getElementById('general-coordination');
-                if (coordinationElement) {
-                    coordinationElement.textContent = data.projeto.coordenacaoGeral.join(' e ');
-                }
-            }
-            
             populateInstitutes(data.institutos);
             createRubricasChart(data.rubricas);
             populateRubricasProgress(data.rubricas);

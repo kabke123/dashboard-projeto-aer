@@ -76,10 +76,10 @@
             "id": "IFMG",
             "nomeCompleto": "Instituto Federal de Minas Gerais",
             "localizacao": "Minas Gerais",
-            "status": "inativo",
-            "resumo": { "alunos": 128, "cursos": 4, "orcamento": 1900000 },
-            "paginaDetalhes": null,
-            "arquivoDeDados": null
+            "status": "ativo",
+            "resumo": { "alunos": 64, "cursos": 2, "orcamento": 13383064 },
+            "paginaDetalhes": "detalhes.html",
+            "arquivoDeDados": "dados_ifmg.json"
         },
         {
             "id": "IFRS",

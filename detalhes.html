@@ -134,16 +134,13 @@
         </div>
     </header>
 
-    <!-- Botão para voltar à página inicial -->
     <div class="container mb-3">
         <a href="index.html" class="btn btn-warning">
             <i class="fas fa-home"></i> Voltar à Página Inicial
         </a>
     </div>
 
-    <!-- Dashboard Principal -->
     <div class="container" id="main-dashboard">
-        <!-- Resumo Estatístico -->
         <div class="row mb-4">
             <div class="col-md-3">
                 <div class="card stats-card">
@@ -171,8 +168,19 @@
             </div>
         </div>
 
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <i class="fas fa-calendar-alt me-2"></i>Próximos Cursos a Iniciar
+                    </div>
+                    <div class="card-body" id="upcoming-courses-container">
+                        </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
-            <!-- Gráfico de Alunos por Curso -->
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header bg-danger text-white">
@@ -188,21 +196,18 @@
         </div>
 
         <div class="row mt-4">
-            <!-- Detalhes dos Cursos -->
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header bg-primary text-white">
-                        Detalhes dos Cursos
+                        Detalhes de Todos os Cursos
                     </div>
                     <div class="card-body">
                         <div class="row" id="courses-container">
-                            <!-- Cursos serão inseridos aqui via JavaScript -->
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Informações Financeiras -->
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header bg-warning text-dark">
@@ -213,15 +218,13 @@
                             <canvas id="financialChart"></canvas>
                         </div>
                         <div class="mt-3" id="financial-details">
-                            <!-- Detalhes financeiros serão inseridos aqui via JavaScript -->
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Drill-down para Alunos -->
     <div class="container drill-down-container" id="students-drill-down">
         <button class="btn btn-secondary mb-3" id="back-from-students">
             <i class="fas fa-arrow-left"></i> Voltar ao Dashboard
@@ -243,15 +246,13 @@
                             </tr>
                         </thead>
                         <tbody id="students-table-body">
-                            <!-- Dados dos alunos serão inseridos aqui via JavaScript -->
-                        </tbody>
+                            </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Drill-down para Cursos -->
     <div class="container drill-down-container" id="course-drill-down">
         <button class="btn btn-secondary mb-3" id="back-from-course">
             <i class="fas fa-arrow-left"></i> Voltar ao Dashboard
@@ -292,8 +293,7 @@
                                 </tr>
                             </thead>
                             <tbody id="course-students-table">
-                                <!-- Dados dos alunos do curso serão inseridos aqui via JavaScript -->
-                            </tbody>
+                                </tbody>
                         </table>
                     </div>
                 </div>
@@ -301,7 +301,6 @@
         </div>
     </div>
 
-    <!-- Botão flutuante para voltar à página inicial -->
     <a href="index.html" class="back-to-home" title="Voltar à Página Inicial">
         <i class="fas fa-home"></i>
     </a>
