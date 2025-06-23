@@ -64,6 +64,14 @@
         {"nome": "Lucas Augusto Scotta Merlo", "cargo": "Coordenador de Curso - Auxiliar diversos", "email": "lucas.merlo@iff.edu.br"},
         {"nome": "Sérgio Pessanha Rasma", "cargo": "Coordenador de Curso - Técnico em Soldagem", "email": "sergio.rasma@iff.edu.br"},
         {"nome": "Francisco Tiago Carvalho Silva", "cargo": "Coordenador de Curso - Técnico em Eletrotécnica", "email": "francisco.silva@iff.edu.br"},
-        {"nome": "Daniel Almeida da Costa Pessanha", "cargo": "Coordenador de Curso - Técnico em Planejamento e Controle da Produção", "email": "daniel.pessanha@iff.edu.br"}
+        {"nome": "Daniel Almeida da Costa Pessanha", "cargo": "Coordenador de Curso - Técnico em Planejamento e Controle da Produção", "email": "daniel.pessanha@iff.edu.br"},
+        {"nome": "Jéssica Oliveira Monteira", "cargo": "Apoio Assistência Social", "email": "jessica.monteira@iff.edu.br"},
+        {"nome": "Roberta Aparecida Nogueira da Luz Gomes", "cargo": "Apoio Psicológico", "email": "roberta.gomes@iff.edu.br"},
+        {"nome": "Sandra Helena de Araujo Lima", "cargo": "Apoio Pedagógico", "email": "sandra.lima@iff.edu.br"},
+        {"nome": "Rafaela Dumas Reis Dias", "cargo": "Apoio Pedagógico", "email": "rafaela.dias@iff.edu.br"},
+        {"nome": "Juliana Gomes da Rocha Barreiros Alves", "cargo": "Apoio Administrativo Acadêmico", "email": "juliana.alves@iff.edu.br"},
+        {"nome": "Leandro Silva de Lima", "cargo": "Apoio Administrativo Acadêmico", "email": "leandro.lima@iff.edu.br"},
+        {"nome": "Juliana Marinho dos Santos", "cargo": "Apoio Comunicação", "email": "juliana.santos@iff.edu.br"},
+        {"nome": "Maria Desterro Ibiapina Alvarenga", "cargo": "Apoio Administrativo Compras", "email": "maria.alvarenga@iff.edu.br"}
     ]
 }

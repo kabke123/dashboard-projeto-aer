@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
         loadDashboardData('dados_ifpe.json');
     } else if (instituto === 'IFMG') {
         loadDashboardData('dados_ifmg.json');
+    } else if (instituto === 'IFPR') {
+        loadDashboardData('dados_ifpr.json');
     } else if (instituto === 'IFF') {
         loadDashboardData('dados_dashboard.json');
     } else {
@@ -84,7 +86,7 @@ function initializeDashboard() {
     document.getElementById('total-students').textContent = totalStudents;
     
     const totalInvestment = dashboardData.financeiro['Investimento total'];
-    const materialsBudget = dashboardData.financeiro['Material de Consumo'] || dashboardData.financeiro['Orçamento materiais'] || 0;
+    const materialsBudget = dashboardData.financeiro['Material de Consumo'] || dashboardData.financeiro['Orçamento materiais'] || dashboardData.financeiro['Material de Consumo (Custo Curso)'] || 0;
     
     document.getElementById('total-investment').textContent = `R$ ${(totalInvestment / 1000000).toFixed(1)}M`;
     document.getElementById('materials-budget').textContent = `R$ ${(materialsBudget / 1000).toFixed(0)}K`;
@@ -95,7 +97,8 @@ function initializeDashboard() {
     populateCourseDetails();
     populateFinancialDetails();
     populateStudentsTable();
-    populateUpcomingCourses(dashboardData.cursos); // Nova função
+    populateUpcomingCourses(dashboardData.cursos); 
+    populateTeamCard(dashboardData.equipes);
 }
 
 function setupNavigationEvents() {
@@ -116,12 +119,51 @@ function hideDrillDown(containerId) {
     window.scrollTo(0, 0);
 }
 
-// NOVA FUNÇÃO PARA POPULAR OS PRÓXIMOS CURSOS
+// FUNÇÃO PARA POPULAR O CARD DA EQUIPE (COM FILTRO)
+function populateTeamCard(team) {
+    const container = document.getElementById('team-container');
+    container.innerHTML = '';
+
+    if (!team || team.length === 0) {
+        container.innerHTML = '<p class="text-muted">Nenhuma equipe informada para este instituto.</p>';
+        return;
+    }
+
+    // FILTRO PARA REMOVER QUALQUER PESSOA CUJO CARGO INCLUA "COORDENADOR"
+    const supportTeam = team.filter(member => !member.cargo.toLowerCase().includes('coordenador'));
+
+    if (supportTeam.length === 0) {
+        container.innerHTML = '<p class="text-muted">Nenhuma equipe de apoio informada.</p>';
+        return;
+    }
+
+    const listGroup = document.createElement('div');
+    listGroup.className = 'list-group list-group-flush';
+
+    supportTeam.forEach(member => {
+        const memberElement = document.createElement('a');
+        memberElement.href = `mailto:${member.email || ''}`;
+        memberElement.className = 'list-group-item d-flex justify-content-between align-items-start';
+        
+        memberElement.innerHTML = `
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">${member.nome}</div>
+                ${member.cargo}
+            </div>
+            <i class="fas fa-envelope text-muted mt-1"></i>
+        `;
+        listGroup.appendChild(memberElement);
+    });
+
+    container.appendChild(listGroup);
+}
+
+// FUNÇÃO PARA POPULAR OS PRÓXIMOS CURSOS
 function populateUpcomingCourses(courses) {
     const container = document.getElementById('upcoming-courses-container');
-    container.innerHTML = ''; // Limpa o container
+    container.innerHTML = ''; 
 
-    const today = new Date('2025-06-21T19:30:55'); // Usando a data atual para filtrar
+    const today = new Date();
     today.setHours(0, 0, 0, 0);
 
     const upcoming = courses
@@ -132,10 +174,13 @@ function populateUpcomingCourses(courses) {
         container.innerHTML = '<p class="text-muted">Nenhum curso programado para iniciar neste instituto.</p>';
         return;
     }
+    
+    const listGroup = document.createElement('div');
+    listGroup.className = 'list-group list-group-flush';
 
     upcoming.forEach(course => {
         const courseDate = new Date(course.inicio);
-        const formattedDate = courseDate.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+        const formattedDate = courseDate.toLocaleDateString('pt-BR', { timeZone: 'UTC', day: '2-digit', month: '2-digit', year: 'numeric' });
 
         const courseElement = document.createElement('div');
         courseElement.className = 'list-group-item d-flex justify-content-between align-items-center';
@@ -146,8 +191,9 @@ function populateUpcomingCourses(courses) {
             </div>
             <span class="badge bg-primary rounded-pill">${formattedDate}</span>
         `;
-        container.appendChild(courseElement);
+        listGroup.appendChild(courseElement);
     });
+    container.appendChild(listGroup);
 }
 
 
@@ -194,7 +240,7 @@ function createFinancialChart() {
     const financialData = dashboardData.financeiro;
     
     const mainItems = Object.entries(financialData)
-        .filter(([key]) => key !== 'Investimento total' && key !== 'Orçamento materiais' && key !== 'Receita de Projetos')
+        .filter(([key]) => !['Investimento total', 'Orçamento materiais', 'Receita de Projetos'].includes(key))
         .sort((a, b) => b[1] - a[1])
         .slice(0, 4);
     
@@ -273,7 +319,7 @@ function populateFinancialDetails() {
     Object.entries(financialData).forEach(([category, value]) => {
         const detailElement = document.createElement('div');
         detailElement.className = 'd-flex justify-content-between align-items-center mb-2';
-        detailElement.innerHTML = `<span>${category}:</span><strong>R$ ${value.toLocaleString('pt-BR')}</strong>`;
+        detailElement.innerHTML = `<span>${category}:</span><strong>R$ ${value.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong>`;
         container.appendChild(detailElement);
     });
 }
@@ -374,9 +420,7 @@ function formatDate(dateString) {
     if (!dateString) return 'N/A';
     const date = new Date(dateString);
     if (isNaN(date.getTime())) return dateString;
-    // Adiciona o fuso horário para corrigir a data
-    const userTimezoneOffset = date.getTimezoneOffset() * 60000;
-    return new Date(date.getTime() + userTimezoneOffset).toLocaleDateString('pt-BR');
+    return date.toLocaleDateString('pt-BR', { timeZone: 'UTC' });
 }
 
 window.showCourseDetails = showCourseDetails;

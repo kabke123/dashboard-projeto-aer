@@ -103,10 +103,10 @@
             "id": "IFPR",
             "nomeCompleto": "Instituto Federal do Paraná",
             "localizacao": "Paraná",
-            "status": "inativo",
-            "resumo": { "alunos": 132, "cursos": 4, "orcamento": 1800000 },
-            "paginaDetalhes": null,
-            "arquivoDeDados": null
+            "status": "ativo",
+            "resumo": { "alunos": 132, "cursos": 5, "orcamento": 20974299 },
+            "paginaDetalhes": "detalhes.html",
+            "arquivoDeDados": "dados_ifpr.json"
         },
         {
             "id": "IFES",

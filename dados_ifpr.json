@@ -1,0 +1,89 @@
+{
+    "campus": {
+        "nome": "Araucária",
+        "coordenador": "Nelson de Castro Neto"
+    },
+    "cursos": [
+        {
+            "nome": "Técnico em Eletrotécnica",
+            "tipo": "tecnico",
+            "vagas": 32,
+            "duracao": "22 meses",
+            "inicio": "2024-11-05",
+            "termino": "2026-08-31",
+            "coordenador": "Coordenador(a) Genérico(a)"
+        },
+        {
+            "nome": "Técnico em Mecânica",
+            "tipo": "tecnico",
+            "vagas": 36,
+            "duracao": "22 meses",
+            "inicio": "2024-11-05",
+            "termino": "2026-08-31",
+            "coordenador": "Coordenador(a) Genérico(a)"
+        },
+        {
+            "nome": "Técnico em Soldagem",
+            "tipo": "tecnico",
+            "vagas": 12,
+            "duracao": "24 meses",
+            "inicio": "2025-06-02",
+            "termino": "2027-05-28",
+            "coordenador": "Coordenador(a) Genérico(a)"
+        },
+        {
+            "nome": "Auxiliar Diversos",
+            "tipo": "FIC",
+            "vagas": 32,
+            "duracao": "4 meses",
+            "inicio": "2025-05-05",
+            "termino": "2025-08-30",
+            "coordenador": "Coordenador(a) Genérico(a)"
+        },
+        {
+            "nome": "Caldeiraria",
+            "tipo": "FIC",
+            "vagas": 20,
+            "duracao": "4 meses",
+            "inicio": "2025-05-05",
+            "termino": "2025-08-30",
+            "coordenador": "Coordenador(a) Genérico(a)"
+        }
+    ],
+    "alunos": [
+        {"id": 634, "nome": "Aluno IFPR 1", "curso": "Técnico em Eletrotécnica", "bolsa": "R$ 660,00", "ingresso": "2024-11-05"},
+        {"id": 635, "nome": "Aluno IFPR 2", "curso": "Técnico em Eletrotécnica", "bolsa": "R$ 856,00", "ingresso": "2024-11-05"},
+        {"id": 666, "nome": "Aluno IFPR 33", "curso": "Técnico em Mecânica", "bolsa": "R$ 660,00", "ingresso": "2024-11-05"},
+        {"id": 667, "nome": "Aluno IFPR 34", "curso": "Técnico em Mecânica", "bolsa": "R$ 856,00", "ingresso": "2024-11-05"},
+        {"id": 702, "nome": "Aluno IFPR 69", "curso": "Técnico em Soldagem", "bolsa": "R$ 660,00", "ingresso": "2025-06-02"},
+        {"id": 714, "nome": "Aluno IFPR 81", "curso": "Auxiliar Diversos", "bolsa": "R$ 856,00", "ingresso": "2025-05-05"},
+        {"id": 746, "nome": "Aluno IFPR 113", "curso": "Caldeiraria", "bolsa": "R$ 660,00", "ingresso": "2025-05-05"}
+    ],
+    "financeiro": {
+        "Investimento total": 20974299,
+        "Receita de Projetos": 6149236.60,
+        "Diárias, Transporte e Alimentação": 225616.00,
+        "Serviços Terceiros PJ": 150400.00,
+        "Auxílio aos Estudantes": 5781098.40,
+        "Equipe IF Local (Custo Curso)": 1279200.00,
+        "Coordenação de Curso (Custo Curso)": 518700.00,
+        "Docentes (Custo Curso)": 1493280.00,
+        "Material de Consumo (Custo Curso)": 916165.90,
+        "Visita Técnica (Custo Curso)": 352000.00,
+        "Ressarcimento Despesas Obrigatórias": 137184.00,
+        "Materiais de Comunicação": 203360.00,
+        "Material Permanente e Equipamentos": 3768058.10
+    },
+    "equipes": [
+        {
+            "nome": "Nelson de Castro Neto",
+            "cargo": "Coordenador Geral",
+            "email": "nelson.neto@ifpr.edu.br"
+        },
+        {
+            "nome": "Coordenador(a) Genérico(a)",
+            "cargo": "Coordenador(a) de Curso",
+            "email": "coord.generico@ifpr.edu.br"
+        }
+    ]
+}
